@@ -134,6 +134,36 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+// contact form
+const formButtonText = formBtn.querySelector("[data-form-btn-text]");
+
+form.addEventListener("submit", async function (event) {
+  event.preventDefault();
+
+  formBtn.disabled = true;
+  formButtonText.textContent = "Sending...";
+
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error("Form submission failed");
+    }
+
+    formButtonText.textContent = "Sent!";
+    form.reset();
+  } catch (error) {
+    formButtonText.textContent = "Try Again";
+    formBtn.disabled = false;
+  }
+});
+
 
 
 // page navigation variables
@@ -163,3 +193,4 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
