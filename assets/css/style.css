@@ -522,6 +522,28 @@ main {
   z-index: 5;
 }
 
+@media (max-width: 1023px) {
+  .navbar {
+    top: 0;
+    bottom: auto;
+    border-radius: 0 0 12px 12px;
+    
+  }
+  main {
+    margin-top: 70px;
+  }
+
+  .navbar-list {
+    width: 100%;
+  }
+
+  .navbar-link {
+    flex: 1;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
 .navbar-list {
   display: flex;
   flex-wrap: wrap;
@@ -532,9 +554,10 @@ main {
 
 .navbar-link {
   color: var(--light-gray);
-  font-size: var(--fs-8);
+  /* font-size: 16px; */
   padding: 20px 7px;
   transition: color var(--transition-1);
+  flex: 1;
 }
 
 .navbar-link:hover,
@@ -1612,6 +1635,7 @@ textarea.form-input::-webkit-resizer {
 
   .navbar-link {
     --fs-8: 14px;
+    flex: 1;
   }
 
 
@@ -1853,6 +1877,7 @@ textarea.form-input::-webkit-resizer {
 
   .navbar-link {
     --fs-8: 15px;
+    flex: 1;
   }
 
 
@@ -1946,7 +1971,6 @@ textarea.form-input::-webkit-resizer {
   /**
    * CUSTOM PROPERTY
    */
-
   :root {
 
     /**
@@ -2003,15 +2027,18 @@ textarea.form-input::-webkit-resizer {
     border-radius: 0 20px;
     padding: 0 20px;
     box-shadow: none;
+
   }
 
   .navbar-list {
+    display: flex;
     gap: 30px;
     padding: 0 20px;
   }
 
   .navbar-link {
     font-weight: var(--fw-500);
+    flex: 1;
   }
 
 
