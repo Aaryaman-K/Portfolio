@@ -41,9 +41,9 @@
 
       <div class="sidebar-info">
 
-        <figure class="avatar-box">
+        <button class="avatar-box" type="button" data-avatar-modal aria-label="Open profile picture">
           <img src="./assets/images/france-selfie.jpg" alt="Aaryaman Kompella" width="80">
-        </figure>
+        </button>
 
         <div class="info-content">
           <h1 class="name" title="Aaryaman Kompella">Aaryaman Kompella</h1>
@@ -74,7 +74,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:aaryamankompella1234@gmail.com" class="contact-link">aaryamankompella1234@gmail.com</a>
+              <a href="mailto:ksaaryaman@gmail.com" class="contact-link">ksaaryaman@gmail.com</a>
             </div>
 
           </li>
@@ -147,6 +147,12 @@
           <li class="social-item">
             <a href="https://www.linkedin.com/in/aaryamank/" target="_blank" class="social-link">
               <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Aaryaman-k" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
         </ul>
@@ -582,6 +588,35 @@
                 <li>Analyzed consolidated crosswalk data to identify high-demand apprenticeship trades, guiding strategic funding allocation for corporate partnerships and expanding career pipelines for over 500 students annually.</li>
               </ul>
 
+              <ul class="experience-skills skill-ai" aria-label="Skills used at SUNY Research Foundation">
+                <li>PYTHON</li>
+                <li>PANDAS</li>
+                <li>POSTGRESQL</li>
+                <li>MACHINE LEARNING</li>
+                <li>AZURE OPENAI</li>
+              </ul>
+
+              <div class="image-carousel" data-carousel aria-label="SUNY Research Foundation project images">
+                <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous SUNY project image">
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <figure class="carousel-slide">
+                      <img src="./assets/images/suny_rf_guide.png" alt="SUNY RF apprenticeship data guide">
+                      <figcaption>Apprenticeship data guide</figcaption>
+                    </figure>
+                    <figure class="carousel-slide">
+                      <img src="./assets/images/suny_rf_app.png" alt="SUNY RF data validation application">
+                      <figcaption>Data validation application</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next SUNY project image">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
+
             </li>
 
             <li class="timeline-item">
@@ -595,6 +630,13 @@
                 <li>Utilized CSS to engineer a fully responsive interface across all device types, implementing custom slick sliders to enhance modern UI aesthetics.</li>
               </ul>
 
+              <ul class="experience-skills skill-software" aria-label="Skills used at SSC Infotech LLP">
+                <li>JAVASCRIPT</li>
+                <li>REACT</li>
+                <li>CSS</li>
+                <li>RESPONSIVE UI</li>
+              </ul>
+
             </li>
 
             <li class="timeline-item">
@@ -606,6 +648,13 @@
               <ul class="timeline-bullets">
                 <li>Facilitate conflict resolution among 35+ residents, while mentoring 7 council members as a Hall Council Liaison, providing leadership and program development.</li>
                 <li>Coordinate with a 7-person team to oversee 250+ residents, ensuring a supportive and organized environment through effective teamwork.</li>
+              </ul>
+
+              <ul class="experience-skills skill-leadership" aria-label="Skills used as a Resident Assistant">
+                <li>LEADERSHIP</li>
+                <li>MENTORSHIP</li>
+                <li>CONFLICT RESOLUTION</li>
+                <li>TEAMWORK</li>
               </ul>
 
             </li>
@@ -630,8 +679,17 @@
 
               <h4 class="h4 timeline-item-title">AI &amp; Data Science</h4>
 
-              <span>Python, Scikit-Learn, Pandas, NumPy, Matplotlib, Seaborn, Machine Learning, <br>
-                Data Visualization, Exploratory Data Analysis (EDA)</span>
+              <ul class="experience-skills skill-tags skill-ai" aria-label="AI and data science skills">
+                <li>PYTHON</li>
+                <li>SCIKIT-LEARN</li>
+                <li>PANDAS</li>
+                <li>NUMPY</li>
+                <li>MATPLOTLIB</li>
+                <li>SEABORN</li>
+                <li>MACHINE LEARNING</li>
+                <li>DATA VISUALIZATION</li>
+                <li>EDA</li>
+              </ul>
 
             </li>
 
@@ -639,7 +697,16 @@
 
               <h4 class="h4 timeline-item-title">Software &amp; Platform</h4>
 
-              <span>Java, C, OCaml, JavaScript, React, PostgreSQL, MySQL, DevOps</span>
+              <ul class="experience-skills skill-tags skill-software" aria-label="Software and platform skills">
+                <li>JAVA</li>
+                <li>C</li>
+                <li>OCAML</li>
+                <li>JAVASCRIPT</li>
+                <li>REACT</li>
+                <li>POSTGRESQL</li>
+                <li>MYSQL</li>
+                <li>DEVOPS</li>
+              </ul>
 
 
             </li>
@@ -648,7 +715,11 @@
 
               <h4 class="h4 timeline-item-title">Productivity &amp; Design</h4>
 
-              <span>Microsoft Office, Figma, Fusion 360</span>
+              <ul class="experience-skills skill-tags skill-productivity" aria-label="Productivity and design skills">
+                <li>MICROSOFT OFFICE</li>
+                <li>FIGMA</li>
+                <li>FUSION 360</li>
+              </ul>
 
             </li>
 
@@ -656,7 +727,13 @@
 
               <h4 class="h4 timeline-item-title">Languages</h4>
 
-              <span>Native fluency in English, Telugu, Hindi, and Gujarati; intermediate Japanese</span>
+              <ul class="experience-skills skill-tags skill-languages" aria-label="Language skills">
+                <li>ENGLISH</li>
+                <li>TELUGU</li>
+                <li>HINDI</li>
+                <li>GUJARATI</li>
+                <li>JAPANESE</li>
+              </ul>
 
             </li>
 
@@ -718,10 +795,58 @@
               <h4 class="h4 timeline-item-title">Data Mapping &amp; Classification | Python, Scikit-Learn, Pandas</h4>
               <span>October 2025</span>
               <ul class="timeline-bullets">
-                <li>Engineered an advanced decision tree classifier, optimizing depth and split parameters using GridSearchCV to analyze a credit card transactions dataset of over 1 million entries.</li>
-                <li>Conducted Exploratory Data Analysis (EDA) using Seaborn to construct heatmaps and scatterplots, isolating highly correlated variables like the ratio of median purchase price to inform the machine learning architecture.</li>
-                <li>Tuned the classification model utilizing cross-validation and balanced class weights to address a significant class imbalance, achieving an F1-score of 0.84 and a 79% fraud detection rate without overfitting.</li>
+                <li>Cleaned and validated a credit card transactions dataset containing more than 1 million records, confirming that values were complete, readable, and stored in the correct data types before analysis.</li>
+                <li>Performed exploratory data analysis using heatmaps, scatterplots, boxplots, and probability and bar plots to examine distributions, identify outliers, and compare fraud patterns across transaction features.</li>
+                <li>Identified the strongest relationships with fraud, including the ratio of median purchase price and distance-based transaction features; fraudulent transactions showed higher distance-from-home values, while the ratio of median purchase price was concentrated mostly below 60.</li>
+                <li>Engineered and tuned a decision tree classifier with GridSearchCV, cross-validation, and balanced class weights, achieving an F1-score of 0.84 and a 79% fraud detection rate without overfitting.</li>
               </ul>
+
+              <ul class="experience-skills project-skills skill-ai" aria-label="Skills used for Data Mapping and Classification">
+                <li>PYTHON</li>
+                <li>SCIKIT-LEARN</li>
+                <li>PANDAS</li>
+                <li>SEABORN</li>
+                <li>MACHINE LEARNING</li>
+                <li>EDA</li>
+                <li>GRIDSEARCHCV</li>
+              </ul>
+
+              <div class="image-carousel" data-carousel aria-label="Credit card fraud detection project images">
+                <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous EDA image">
+                  <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                <figure>
+                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%203.png" alt="Credit card fraud detection EDA checklist">
+                  <figcaption>EDA checklist</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%204.png" alt="Credit card fraud detection data cleaning analysis">
+                  <figcaption>Data cleaning</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%205.png" alt="Credit card fraud detection heatmap analysis">
+                  <figcaption>Correlation heatmap</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%206.png" alt="Credit card fraud detection scatterplot analysis">
+                  <figcaption>Scatterplot findings</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%207.png" alt="Credit card fraud detection boxplot analysis">
+                  <figcaption>Boxplot analysis</figcaption>
+                </figure>
+                <figure>
+                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%208.png" alt="Credit card fraud detection distance boxplots">
+                  <figcaption>Distance boxplots</figcaption>
+                </figure>
+                  </div>
+                </div>
+                <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next EDA image">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+              </div>
             </li>
 
             <li class="timeline-item">
@@ -733,8 +858,43 @@
                 <li>Built a dynamic, component-based React front-end featuring client-side routing and secure user authentication.</li>
                 <li>Implemented CRUD operations, including undo/redo functionality, for user-generated playlists and songs.</li>
               </ul>
+
+              <ul class="experience-skills project-skills skill-software" aria-label="Skills used for Playlist Web App">
+                <li>JAVASCRIPT</li>
+                <li>REACT</li>
+                <li>MONGODB</li>
+                <li>SQL</li>
+                <li>EXPRESS</li>
+                <li>REST API</li>
+                <li>CRUD</li>
+              </ul>
             </li>
           </ol>
+        </section>
+
+        <section class="timeline embedded-model">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="analytics-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Interactive Data Mapping Model</h3>
+          </div>
+
+          <p class="timeline-text model-intro">
+            Explore the interactive data mapping and classification model directly below.
+          </p>
+
+          <div class="model-frame">
+            <iframe
+              src="https://aaryamank.streamlit.app?embed=true"
+              title="Interactive data mapping model"
+              loading="lazy"
+              allow="fullscreen"></iframe>
+          </div>
+
+          <a class="model-link" href="https://aaryamank.streamlit.app/" target="_blank" rel="noopener noreferrer">
+            Open model in a new tab
+          </a>
         </section>
 
         <section class="timeline">
@@ -758,6 +918,58 @@
         </section>
 
       </article>
+
+      <div class="avatar-modal" data-avatar-modal-container aria-hidden="true">
+        <div class="avatar-modal-overlay" data-avatar-modal-overlay></div>
+        <section class="avatar-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="avatar-modal-title">
+          <button class="modal-close-btn" type="button" data-avatar-modal-close aria-label="Close profile picture">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="image-carousel avatar-carousel" data-carousel aria-label="Personal photos">
+            <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous personal photo">
+              <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <div class="carousel-viewport">
+              <div class="carousel-track">
+                <figure class="carousel-slide">
+                  <img src="./assets/images/goa.jpg" alt="Aaryaman in Goa">
+                  <figcaption>Goa</figcaption>
+                </figure>
+                <figure class="carousel-slide">
+                  <img src="./assets/images/RI_eat.jpg" alt="Aaryaman eating in Rhode Island">
+                  <figcaption>Rhode Island</figcaption>
+                </figure>
+                <figure class="carousel-slide">
+                  <img src="./assets/images/RI_river.jpg" alt="Aaryaman by a river in Rhode Island">
+                  <figcaption>Rhode Island</figcaption>
+                </figure>
+                <figure class="carousel-slide">
+                  <img src="./assets/images/NYC_bowser.jpg" alt="Aaryaman with Bowser in New York City">
+                  <figcaption>New York City</figcaption>
+                </figure>
+                <figure class="carousel-slide">
+                  <img src="./assets/images/AFO.jpg" alt="Aaryaman at AFO">
+                  <figcaption>All For One Concert</figcaption>
+                </figure>
+              </div>
+            </div>
+            <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next personal photo">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="avatar-modal-content">
+            <h2 class="h3" id="avatar-modal-title">Aaryaman Kompella</h2>
+            <p>While I am at SBU, my home is in Surat, India, a long way away, but its been really fun learning and exploring new cultures and places! <br>
+              I love playing video games, reading manga, and watching Vtubers. I'm currently playing Persona 3 Reload, and its amazing! <br>
+              My favourite manga is Tokyo Ghoul (which you should definitely check out!) and I love watching Mori Calliope and listening to her music.<br>
+
+
+            </p>
+          </div>
+        </section>
+      </div>
 
 
 

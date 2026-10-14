@@ -163,3 +163,59 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+// profile avatar modal
+const avatarModal = document.querySelector("[data-avatar-modal-container]");
+const avatarModalOverlay = document.querySelector("[data-avatar-modal-overlay]");
+const avatarModalClose = document.querySelector("[data-avatar-modal-close]");
+const avatarModalButton = document.querySelector("[data-avatar-modal]");
+
+const closeAvatarModal = function () {
+  avatarModal.classList.remove("active");
+  avatarModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+};
+
+avatarModalButton.addEventListener("click", function () {
+  avatarModal.classList.add("active");
+  avatarModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+  avatarModalClose.focus();
+});
+
+avatarModalClose.addEventListener("click", closeAvatarModal);
+avatarModalOverlay.addEventListener("click", closeAvatarModal);
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" && avatarModal.classList.contains("active")) {
+    closeAvatarModal();
+  }
+});
+
+
+// project image carousels
+const carousels = document.querySelectorAll("[data-carousel]");
+
+for (let i = 0; i < carousels.length; i++) {
+  const carousel = carousels[i];
+  const track = carousel.querySelector(".carousel-track");
+  const slides = carousel.querySelectorAll(".carousel-track > figure");
+  const previousButton = carousel.querySelector("[data-carousel-prev]");
+  const nextButton = carousel.querySelector("[data-carousel-next]");
+  let currentSlide = 0;
+
+  const updateCarousel = function () {
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  };
+
+  previousButton.addEventListener("click", function () {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    updateCarousel();
+  });
+
+  nextButton.addEventListener("click", function () {
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateCarousel();
+  });
+}
