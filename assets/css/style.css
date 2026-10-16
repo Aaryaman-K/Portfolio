@@ -984,10 +984,12 @@ main {
 }
 
 .model-link {
-  width: max-content;
-  margin-top: 12px;
   color: var(--nice-purple);
   font-size: var(--fs-6);
+  display: inline-block;
+  width: auto;
+  margin: 0 0 0 8px;
+  white-space: nowrap;
 }
 
 .model-link:hover,
@@ -1194,6 +1196,12 @@ main {
 
 .experience-skills.skill-leadership li {
   border-color: hsl(205, 75%, 64%);
+  color: hsl(205, 85%, 74%);
+  background: hsla(205, 75%, 64%, 0.08);
+}
+
+.experience-skills.skill-mentorship li {
+  border-color: hsl(231, 66%, 42%);
   color: hsl(205, 85%, 74%);
   background: hsla(205, 75%, 64%, 0.08);
 }
