@@ -363,6 +363,42 @@ main {
   overflow: hidden;
 }
 
+.avatar-profile {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar-prompt {
+  position: relative;
+  color: var(--onyx);
+  background: var(--white-2);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  padding: 3px 12px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.avatar-prompt::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  border-top: 7px solid var(--white-2);
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  transform: translateX(-50%);
+}
+
+.avatar-prompt:hover,
+.avatar-prompt:focus-visible {
+  color: var(--nice-purple);
+}
+
 .avatar-box:focus-visible {
   outline: 2px solid var(--nice-purple);
   outline-offset: 4px;
@@ -1026,9 +1062,9 @@ main {
 .avatar-modal-dialog {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(160px, 0.8fr) minmax(0, 1.2fr);
+  grid-template-columns: minmax(260px, 1fr) minmax(0, 1fr);
   gap: 24px;
-  width: min(680px, 100%);
+  width: min(900px, 100%);
   max-height: 90vh;
   overflow: auto;
   padding: 28px;
@@ -1065,7 +1101,7 @@ main {
 }
 
 .avatar-carousel .carousel-slide img {
-  height: 320px;
+  height: 420px;
   object-fit: cover;
 }
 
@@ -1740,7 +1776,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .avatar-carousel .carousel-slide img {
-    height: 240px;
+    height: 300px;
   }
 
   .avatar-modal-content {
@@ -1880,6 +1916,10 @@ textarea.form-input::-webkit-resizer {
     width: calc(100% - 50px);
   }
 
+  .education-info {
+    max-width: calc(100% - 50px);
+    width: calc(100% - 50px);
+  }
 
 
   /**

@@ -199,7 +199,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 const avatarModal = document.querySelector("[data-avatar-modal-container]");
 const avatarModalOverlay = document.querySelector("[data-avatar-modal-overlay]");
 const avatarModalClose = document.querySelector("[data-avatar-modal-close]");
-const avatarModalButton = document.querySelector("[data-avatar-modal]");
+const avatarModalButtons = document.querySelectorAll("[data-avatar-modal]");
 
 const closeAvatarModal = function () {
   avatarModal.classList.remove("active");
@@ -207,11 +207,13 @@ const closeAvatarModal = function () {
   document.body.style.overflow = "";
 };
 
-avatarModalButton.addEventListener("click", function () {
+avatarModalButtons.forEach(function (avatarModalButton) {
+  avatarModalButton.addEventListener("click", function () {
   avatarModal.classList.add("active");
   avatarModal.setAttribute("aria-hidden", "false");
   document.body.style.overflow = "hidden";
   avatarModalClose.focus();
+  });
 });
 
 avatarModalClose.addEventListener("click", closeAvatarModal);
@@ -233,10 +235,29 @@ for (let i = 0; i < carousels.length; i++) {
   const slides = carousel.querySelectorAll(".carousel-track > figure");
   const previousButton = carousel.querySelector("[data-carousel-prev]");
   const nextButton = carousel.querySelector("[data-carousel-next]");
+  const isModalCarousel = carousel.closest("[data-avatar-modal-container]") !== null;
   let currentSlide = 0;
+  let isPaused = false;
 
   const updateCarousel = function () {
     track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  };
+
+  const advanceCarousel = function () {
+    if (isPaused || (isModalCarousel && !avatarModal.classList.contains("active"))) {
+      return;
+    }
+
+    currentSlide = (currentSlide + 1) % slides.length;
+    updateCarousel();
+  };
+
+  const pauseCarousel = function () {
+    isPaused = true;
+  };
+
+  const resumeCarousel = function () {
+    isPaused = false;
   };
 
   previousButton.addEventListener("click", function () {
@@ -248,4 +269,17 @@ for (let i = 0; i < carousels.length; i++) {
     currentSlide = (currentSlide + 1) % slides.length;
     updateCarousel();
   });
+
+  carousel.addEventListener("mouseenter", pauseCarousel);
+  carousel.addEventListener("mouseleave", resumeCarousel);
+  carousel.addEventListener("focusin", pauseCarousel);
+  carousel.addEventListener("focusout", function (event) {
+    if (!carousel.contains(event.relatedTarget)) {
+      resumeCarousel();
+    }
+  });
+
+  if (slides.length > 1) {
+    window.setInterval(advanceCarousel, 3000);
+  }
 }

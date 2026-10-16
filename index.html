@@ -41,9 +41,14 @@
 
       <div class="sidebar-info">
 
-        <button class="avatar-box" type="button" data-avatar-modal aria-label="Open profile picture">
-          <img src="./assets/images/france-selfie.jpg" alt="Aaryaman Kompella" width="80">
-        </button>
+        <div class="avatar-profile">
+          <button class="avatar-prompt" type="button" data-avatar-modal aria-label="Open profile pictures">
+            Click me! :&#41;
+          </button>
+          <button class="avatar-box" type="button" data-avatar-modal aria-label="Open profile picture">
+            <img src="./assets/images/france-selfie.jpg" alt="Aaryaman Kompella" width="80">
+          </button>
+        </div>
 
         <div class="info-content">
           <h1 class="name" title="Aaryaman Kompella">Aaryaman Kompella</h1>
@@ -105,6 +110,30 @@
             </div>
 
           </li> -->
+
+
+
+
+          <li class="contact-item">
+
+
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+
+              <p class="contact-title">Education</p>
+              <p class="contact-link">CS @ SBU | GPA: 3.76</p>
+              
+            </div>
+
+
+
+
+
+
+          </li>
 
           <li class="contact-item">
 
@@ -512,33 +541,7 @@
 
         </section>
 
-        <section class="timeline">
 
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Bachelor's in Computer Science | Stony Brook University</h4>
-
-              <span>Expected May 2027</span>
-
-              <p class="timeline-text">
-                Current GPA: 3.76
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
 
       </article>
 
@@ -566,7 +569,7 @@
           </p>
         </section> -->
 
-        
+
 
         <section class="timeline">
 
@@ -610,7 +613,8 @@
               </ul>
 
               <div class="image-carousel" data-carousel aria-label="SUNY Research Foundation project images">
-                <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous SUNY project image">
+                <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev
+                  aria-label="Previous SUNY project image">
                   <ion-icon name="chevron-back-outline"></ion-icon>
                 </button>
                 <div class="carousel-viewport">
@@ -625,7 +629,8 @@
                     </figure>
                   </div>
                 </div>
-                <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next SUNY project image">
+                <button class="carousel-button carousel-button-next" type="button" data-carousel-next
+                  aria-label="Next SUNY project image">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </button>
               </div>
@@ -639,8 +644,10 @@
               <span>June 2024 — August 2024</span>
 
               <ul class="timeline-bullets">
-                <li>Developed a clean, user-friendly interface for a client website supporting 200+ daily users, focusing on technical requirements and user experience.</li>
-                <li>Utilized CSS to engineer a fully responsive interface across all device types, implementing custom slick sliders to enhance modern UI aesthetics.</li>
+                <li>Developed a clean, user-friendly interface for a client website supporting 200+ daily users,
+                  focusing on technical requirements and user experience.</li>
+                <li>Utilized CSS to engineer a fully responsive interface across all device types, implementing custom
+                  slick sliders to enhance modern UI aesthetics.</li>
               </ul>
 
               <ul class="experience-skills skill-software" aria-label="Skills used at SSC Infotech LLP">
@@ -659,8 +666,10 @@
               <span>August 2024 — Present</span>
 
               <ul class="timeline-bullets">
-                <li>Facilitate conflict resolution among 35+ residents, while mentoring 7 council members as a Hall Council Liaison, providing leadership and program development.</li>
-                <li>Coordinate with a 7-person team to oversee 250+ residents, ensuring a supportive and organized environment through effective teamwork.</li>
+                <li>Facilitate conflict resolution among 35+ residents, while mentoring 7 council members as a Hall
+                  Council Liaison, providing leadership and program development.</li>
+                <li>Coordinate with a 7-person team to oversee 250+ residents, ensuring a supportive and organized
+                  environment through effective teamwork.</li>
               </ul>
 
               <ul class="experience-skills skill-leadership" aria-label="Skills used as a Resident Assistant">
@@ -672,9 +681,9 @@
 
             </li>
 
-          
 
-          
+
+
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Canon USA Mentorship | Stony Brook University</h4>
               <span>August 2024 — June 2025</span>
@@ -825,17 +834,26 @@
 
           <ol class="timeline-list">
             <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Data Mapping &amp; Classification |<a class="model-link" href="https://aaryamank.streamlit.app/" target="_blank" rel="noopener noreferrer">
-            Open model in a new tab</a></h4>
+              <h4 class="h4 timeline-item-title">Data Mapping &amp; Classification |<a class="model-link"
+                  href="https://aaryamank.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                  Open model in a new tab</a></h4>
               <span>October 2025</span>
               <ul class="timeline-bullets">
-                <li>Cleaned and validated a credit card transactions dataset containing more than 1 million records, confirming that values were complete, readable, and stored in the correct data types before analysis.</li>
-                <li>Performed exploratory data analysis using heatmaps, scatterplots, boxplots, and probability and bar plots to examine distributions, identify outliers, and compare fraud patterns across transaction features.</li>
-                <li>Identified the strongest relationships with fraud, including the ratio of median purchase price and distance-based transaction features; fraudulent transactions showed higher distance-from-home values, while the ratio of median purchase price was concentrated mostly below 60.</li>
-                <li>Engineered and tuned a decision tree classifier with GridSearchCV, cross-validation, and balanced class weights, achieving an F1-score of 0.84 and a 79% fraud detection rate without overfitting.</li>
+                <li>Cleaned and validated a credit card transactions dataset containing more than 1 million records,
+                  confirming that values were complete, readable, and stored in the correct data types before analysis.
+                </li>
+                <li>Performed exploratory data analysis using heatmaps, scatterplots, boxplots, and probability and bar
+                  plots to examine distributions, identify outliers, and compare fraud patterns across transaction
+                  features.</li>
+                <li>Identified the strongest relationships with fraud, including the ratio of median purchase price and
+                  distance-based transaction features; fraudulent transactions showed higher distance-from-home values,
+                  while the ratio of median purchase price was concentrated mostly below 60.</li>
+                <li>Engineered and tuned a decision tree classifier with GridSearchCV, cross-validation, and balanced
+                  class weights, achieving an F1-score of 0.84 and a 79% fraud detection rate without overfitting.</li>
               </ul>
 
-              <ul class="experience-skills project-skills skill-ai" aria-label="Skills used for Data Mapping and Classification">
+              <ul class="experience-skills project-skills skill-ai"
+                aria-label="Skills used for Data Mapping and Classification">
                 <li>PYTHON</li>
                 <li>SCIKIT-LEARN</li>
                 <li>PANDAS</li>
@@ -846,46 +864,64 @@
               </ul>
 
               <div class="image-carousel" data-carousel aria-label="Credit card fraud detection project images">
-                <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous EDA image">
+                <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev
+                  aria-label="Previous EDA image">
                   <ion-icon name="chevron-back-outline"></ion-icon>
                 </button>
                 <div class="carousel-viewport">
                   <div class="carousel-track">
-                <figure>
-                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%203.png" alt="Credit card fraud detection EDA checklist">
-                  <figcaption>EDA checklist</figcaption>
-                </figure>
-                <figure>
-                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%204.png" alt="Credit card fraud detection data cleaning analysis">
-                  <figcaption>Data cleaning</figcaption>
-                </figure>
-                <figure>
-                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%205.png" alt="Credit card fraud detection heatmap analysis">
-                  <figcaption>Correlation heatmap</figcaption>
-                </figure>
-                <figure>
-                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%206.png" alt="Credit card fraud detection scatterplot analysis">
-                  <figcaption>Scatterplot findings</figcaption>
-                </figure>
-                <figure>
-                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%207.png" alt="Credit card fraud detection boxplot analysis">
-                  <figcaption>Boxplot analysis</figcaption>
-                </figure>
-                <figure>
-                  <img src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%208.png" alt="Credit card fraud detection distance boxplots">
-                  <figcaption>Distance boxplots</figcaption>
-                </figure>
-                <figure>
-                  <img src="./assets/CSE 351 - Credit Card Fraud Detection conv/CSE 351 - Credit Card Fraud Detection conv 9.png" alt="Credit card fraud detection probability">
-                  <figcaption>Distance probability</figcaption>
-                </figure>
-                <figure>
-                  <img src="./assets/CSE 351 - Credit Card Fraud Detection conv/CSE 351 - Credit Card Fraud Detection conv 19.png" alt="Credit card fraud detection decision tree">
-                  <figcaption>Decision Tree</figcaption>
-                </figure>
+                    <figure>
+                      <img
+                        src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%203.png"
+                        alt="Credit card fraud detection EDA checklist">
+                      <figcaption>EDA checklist</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%204.png"
+                        alt="Credit card fraud detection data cleaning analysis">
+                      <figcaption>Data cleaning</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%205.png"
+                        alt="Credit card fraud detection heatmap analysis">
+                      <figcaption>Correlation heatmap</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%206.png"
+                        alt="Credit card fraud detection scatterplot analysis">
+                      <figcaption>Scatterplot findings</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%207.png"
+                        alt="Credit card fraud detection boxplot analysis">
+                      <figcaption>Boxplot analysis</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        src="./assets/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv/CSE%20351%20-%20Credit%20Card%20Fraud%20Detection%20conv%208.png"
+                        alt="Credit card fraud detection distance boxplots">
+                      <figcaption>Distance boxplots</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        src="./assets/CSE 351 - Credit Card Fraud Detection conv/CSE 351 - Credit Card Fraud Detection conv 9.png"
+                        alt="Credit card fraud detection probability">
+                      <figcaption>Distance probability</figcaption>
+                    </figure>
+                    <figure>
+                      <img
+                        src="./assets/CSE 351 - Credit Card Fraud Detection conv/CSE 351 - Credit Card Fraud Detection conv 18.png"
+                        alt="Credit card fraud detection decision tree">
+                      <figcaption>Decision Tree</figcaption>
+                    </figure>
                   </div>
                 </div>
-                <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next EDA image">
+                <button class="carousel-button carousel-button-next" type="button" data-carousel-next
+                  aria-label="Next EDA image">
                   <ion-icon name="chevron-forward-outline"></ion-icon>
                 </button>
               </div>
@@ -897,8 +933,10 @@
               <ul class="timeline-bullets">
                 <li>Developed a full-stack MERN web application.</li>
                 <li>Engineered a back-end RESTful API with Express to manage data in a MongoDB database.</li>
-                <li>Built a dynamic, component-based React front-end featuring client-side routing and secure user authentication.</li>
-                <li>Implemented CRUD operations, including undo/redo functionality, for user-generated playlists and songs.</li>
+                <li>Built a dynamic, component-based React front-end featuring client-side routing and secure user
+                  authentication.</li>
+                <li>Implemented CRUD operations, including undo/redo functionality, for user-generated playlists and
+                  songs.</li>
               </ul>
 
               <ul class="experience-skills project-skills skill-software" aria-label="Skills used for Playlist Web App">
@@ -958,7 +996,8 @@
           </button>
 
           <div class="image-carousel avatar-carousel" data-carousel aria-label="Personal photos">
-            <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev aria-label="Previous personal photo">
+            <button class="carousel-button carousel-button-prev" type="button" data-carousel-prev
+              aria-label="Previous personal photo">
               <ion-icon name="chevron-back-outline"></ion-icon>
             </button>
             <div class="carousel-viewport">
@@ -985,16 +1024,20 @@
                 </figure>
               </div>
             </div>
-            <button class="carousel-button carousel-button-next" type="button" data-carousel-next aria-label="Next personal photo">
+            <button class="carousel-button carousel-button-next" type="button" data-carousel-next
+              aria-label="Next personal photo">
               <ion-icon name="chevron-forward-outline"></ion-icon>
             </button>
           </div>
 
           <div class="avatar-modal-content">
             <h2 class="h3" id="avatar-modal-title">Aaryaman Kompella</h2>
-            <p>While I am at SBU, my home is in Surat, India, a long way away, but its been really fun learning and exploring new cultures and places! <br>
-              I love playing video games, reading manga, and watching Vtubers. I'm currently playing Persona 3 Reload, and its amazing! <br>
-              My favourite manga is Tokyo Ghoul (which you should definitely check out!) and I love watching Mori Calliope and listening to her music.<br>
+            <p>While I am at SBU, my home is in Surat, India, a long way away, but its been really fun learning and
+              exploring new cultures and places! <br>
+              I love playing video games, reading manga, and watching Vtubers. I'm currently playing Persona 3 Reload,
+              and its amazing! <br>
+              My favourite manga is Tokyo Ghoul (which you should definitely check out!) and I love watching Mori
+              Calliope and listening to her music.<br>
 
 
             </p>
