@@ -3,7 +3,7 @@
 This is my personal portfolio website, forked from the guy in contributors section. Pls hire
 
 
-https://camo.githubusercontent.com/121f642bb19d6ff4162d442a60b09a4ad20e01b25390a9e8c95761cc3585cf58/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f7265706f2d73697a652f636f64657769746873616465652f76636172642d706572736f6e616c2d706f7274666f6c696f
+Used this template: https://github.com/codewithsadee/vcard-personal-portfolio
 
 ## License
 
